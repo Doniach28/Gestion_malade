@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>formulaire</title>
+<link rel="stylesheet" type="text/css" href="#">
+<style>
+    form {
+  width: 50%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table {
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #13C5DD;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #13C5DD;
+}
+</style>
+       
+    </head>
+    <body>
+    <form method="get" action="maj1.php" name="form1">
+        <h2 align="center">Modifier le patient</h2>
+       
+        <table width="42%" align="center">
+        <tr>
+            <td><label>code:</label></td>
+            <td><input type="text" size="30" name="code" /></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" align="center">
+            <input type="submit" value="Envoyer" name="send"/>
+            <input type="reset" value="Retablir" name="Effacer"/>
+            </td>
+        </tr>
+    </table>
+       
+    </form>
+    </body>
+</html>
